@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,23 +17,57 @@
   </style>
 </head>
 <body>
+ 
+  <section class="wrapper">
+    <div class="container">
+      <!-- picture header -->
+      <div class="header"></div>
+      
+      
+      <!-- text area -->
+      <div class="texts">
+        <h2 class="fs-1 clr-dark" style="padding:.3em 0em ;">Order Summary</h2>
+        <p class="fs-2 clr-saturated" style="margin-top: 10px;">You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!</p>
+      </div>
 
-  Order Summary
+      <div class="plan d-flex">
+        <img class="music" src="./images/icon-music.svg" alt="">
+        
+        <!-- text plan -->
+        <div class="plan-text">
+          <h3 class="clr-dark fs-3">Annual Plan</h3>
+          <p class="fs-3 clr-saturated" style="font-weight: 500;">$59.99/year</p>
+        </div>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+        <!-- link -->
+        <a class="fs-3 link" href="#">Change</a>
+      </div>
 
-  Annual Plan
-  $59.99/year
+      <!-- Payement area -->
+      <div class="fs-3 proceed">
+        <h3 class="payment">Proceed to Payment</h3>
+      </div>
 
-  Change
+      <!-- cancel -->
+      <h5 class="clr-saturated cancel">Cancel Order</h5>
+    </div>
+  </section>
+ 
 
-  Proceed to Payment
-  Cancel Order
+  
+
+  
+  
+
+  
+
+  
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/samson123-sys">Sam Ayebanate</a>.
   </div>
 </body>
 </html>
